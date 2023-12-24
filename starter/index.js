@@ -86,7 +86,8 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
-
+console.log("Financial Analysis");
+console.log("-------------------")
 console.log(`Total months: ${finances.length}`);
 
 let netTotal = 0;
@@ -95,7 +96,7 @@ for (i=0; i<finances.length; i++){
   netTotal+=finances[i][1]; // The netTotal+= is short for netTotal = netTotal + finances[i][1]
 }
 
-console.log(`Net total amount of Profit/Losses over the entire period is ${netTotal}`)
+console.log(`Net total amount of Profit/Losses over the entire period is $${netTotal}`)
 
 let totalChange = 0;
 
@@ -132,7 +133,7 @@ for(i = 1; i<finances.length; i++){
   
 }
 
-console.log(`Greatest Increase in Profits/Losses: ${greatestIncreaseDate}, ${greatestIncreaseAmount}`)
+console.log(`Greatest Increase in Profits/Losses: ${greatestIncreaseDate}, $${greatestIncreaseAmount}`)
 
 
 // Greatest decrease in Profit/Loss(date/amount)
@@ -151,5 +152,5 @@ for(i = 1; i<finances.length; i++){
   }
   
 }
-console.log(`Greatest Decrease in Profits/Losses: ${greatestDecreaseDate}, ${greatestDecreaseAmount}`)
+console.log(`Greatest Decrease in Profits/Losses: ${greatestDecreaseDate}, $${greatestDecreaseAmount}`)
 
